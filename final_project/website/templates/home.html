@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+{% if user.is_authenticated %}
+<style>
+    .movie-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Ensure equal spacing between movie pairs */
+    }
+
+    .movie-pair {
+        display: flex; /* Display movie pairs horizontally */
+        width: 100%; /* Ensure movie pairs take full width of the container */
+        justify-content: space-between; /* Ensure equal spacing between movies within a pair */
+        margin-bottom: 20px; /* Adjust margin between movie pairs */
+    }
+
+    .movie-box {
+        width: calc(100% - 20px); /* Adjust the width as needed and consider margins */
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box; /* Include padding and border in the box's total width and height */
+        text-align: center;
+        height: 100%; /* Ensure consistent height for each movie box */
+    }
+
+    .movie-box img {
+        width: 100%; /* Set image width to 100% of its container */
+        height: 200px; /* Set fixed height for images */
+        object-fit: cover; /* Ensure images cover the entire box */
+    }
+
+    .movie-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .movie-box img {
+        width: 100%; /* Set image width to 100% of its container */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 400px; /* Set maximum width for the image */
+        max-height: 400px; /* Set maximum height for the image */
+    }
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to our Movie Database</h1>
+    <h2>List of Movies</h2>
+    
+    <div class="movie-container">
+        <!-- First Pair: Movie 1 and Movie 2 -->
+        <div class="movie-pair">
+            <!-- Movie 1 -->
+            <a href="{% url 'movie_detail' 1 %}" class="movie-link">
+                <div class="movie-box">
+                    <h2>{{ movie1.name }}</h2>
+                    <img src="https://docubase.mit.edu/wp-content/uploads/2013/11/The-Waiting-Room-800x500.jpg" alt="Description of the image">
+                    <br>
+                    <br>
+                    <p><b>Description:</b> {{ movie1.description }}</p>
+                    <br>
+                    <p><b>Release Date:</b> {{ movie1.release_date }}</p>
+                    <p><b>Director:</b> {{ movie1.director }}</p>
+                </div>
+            </a>
+    
+            <!-- Movie 2 -->
+            <a href="{% url 'movie_detail' 2 %}" class="movie-link">
+                <div class="movie-box">
+                    <h2>{{ movie2.name }}</h2>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTM2ODA4MzE3N15BMl5BanBnXkFtZTcwODE2NjA0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Description of the image">
+                    <br>
+                    <br>
+                    <p><b>Description: </b>{{ movie2.description }}</p>
+                    <br>
+                    <p><b>Release Date: </b>{{ movie2.release_date }}</p>
+                    <p><b>Director: </b>{{ movie2.director }}</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Second Pair: Movie 3 and Movie 4 -->
+        <div class="movie-pair">
+            <!-- Movie 3 -->
+            <a href="{% url 'movie_detail' 3 %}" class="movie-link">
+                <div class="movie-box">
+                    <h2>{{ movie3.name }}</h2>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMzgxNjQ5NTUzMF5BMl5BanBnXkFtZTgwNzI0NjkzMjE@._V1_.jpg" alt="Description of the image">
+                   <br>
+                   <br>
+                    <p><b>Description: </b>{{ movie3.description }}</p>
+                    <p><b>Release Date: </b> {{ movie3.release_date }}</p>
+                    <p><b>Director: </b>{{ movie3.director }}</p>
+                </div>
+            </a>
+    
+            <!-- Movie 4 -->
+            <a href="{% url 'movie_detail' 4 %}" class="movie-link">
+                <div class="movie-box">
+                    <h2>{{ movie4.name }}</h2>
+                    <img src="https://vhx.imgix.net/criterionchannelchartersu/assets/ceacf58b-9251-4083-8068-4b05b224e048.jpg?auto=format%2Ccompress&fit=crop&h=360&q=70&w=640" alt="Description of the image">
+                    <br>
+                    <br>
+                    <p><b>Description: </b>{{ movie4.description }}</p>
+                    <br>
+                    <p><b>Release Date: </b>{{ movie4.release_date }}</p>
+                    <p><b>Director:</b> {{ movie4.director }}</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Third Pair: Movie 5 and Movie 6 -->
+        <div class="movie-pair">
+            <!-- Movie 5 -->
+            <a href="{% url 'movie_detail' 5 %}" class="movie-link">
+                <div class="movie-box">
+                    <h2>{{ movie5.name }}</h2>
+                    <img src="https://cps-static.rovicorp.com/2/Open/20th%20Century%20Fox/The%20Hospital/_derived_jpg_q90_310x470_m0/TheHospital-PosterArt.jpg" alt="Description of the image">
+                    <br>
+                    <br>
+                    <p><b>Description: </b>{{ movie5.description }}</p>
+                    <br>
+                    <p><b>Release Date: </b> {{ movie5.release_date }}</p>
+                    <p><b>Director: </b>{{ movie5.director }}</p>
+                </div>
+            </a>
+    
+            <!-- Movie 6 -->
+            <a href="{% url 'movie_detail' 6 %}" class="movie-link">
+                <div class="movie-box">
+                    <h2>{{ movie6.name }}</h2>
+                    <img src="https://resizing.flixster.com/fUyWWx78ylF6oUoGh8rj9lbCxY0=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p188068_v_h9_ab.jpg" alt="Description of the image">
+                    <br>
+                    <br>
+                    <p><b>Description: </b>{{ movie6.description }}</p>
+                    <br>
+                    <p><b>Release Date: </b>{{ movie6.release_date }}</p>
+                    <p><b>Director: </b>{{ movie6.director }}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+</body>
+</html>
+
+{% else %}
+    <div class="col-md-6 offset-md-3">
+        <h1>Login</h1><br>
+
+        <form method="POST" action="{%url 'home'%}">
+            {% csrf_token %}
+            <form>
+
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="User_name" placeholder="First name" required>
+                </div>
+
+                <br>
+                <div class="mb-3">
+                  <input type="password" class="form-control" name="password" placeholder="password" required>
+                </div>
+
+                <br>    
+                <button type="submit" class="btn btn-secondary">Login</button>
+
+              </form>
+        </form>
+
+    </div>
+{% endif %}
+{% endblock %}
