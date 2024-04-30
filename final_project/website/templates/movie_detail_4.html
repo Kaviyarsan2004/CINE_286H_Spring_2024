@@ -1,0 +1,361 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+{% if user.is_authenticated %}
+<style>
+  body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      font-size: large;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(239, 236, 236);
+      
+  }
+  header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+  }
+  main {
+      padding: 20px;
+  }
+  h1 {
+      margin-bottom: 20px;
+  }
+  h2 {
+      margin-top: 30px;
+  }
+  main img {
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    width: 900px;
+    height: 500px;
+    display: block;
+  }
+  p {
+      margin-bottom: 20px;
+  }
+  ul {
+      list-style: none;
+      padding: 0;
+  }
+  ul li {
+      margin-bottom: 10px;
+  }
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 20px;
+  }
+  .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>No Way Out</h1>
+  
+</header>
+
+<main>
+  <div class="container">
+    <img src="https://vhx.imgix.net/criterionchannelchartersu/assets/428bdb97-69cd-472a-9a97-e9bc34f3986a.jpg?auto=format%2Ccompress&fit=crop&h=720&q=75&w=1280" alt="Description of the image"  style="color: #fff; padding: 10px; margin: 0 auto; width: 900px; height: 500px; display: block;">
+    </div>
+  <h2>Introduction:</h2>
+  <p>
+    "The Necessities of Life" (French: Ce qu'il faut pour vivre) is a 2008 Canadian drama film directed by Benoît Pilon and starring Natar Ungalaaq, Éveline Gélinas, and Paul-André Brasseur. Told in both French and Inuktitut, the film is about an Inuit man who is sent to Quebec for tuberculosis treatment.
+    
+    The film was shot in Iqaluit, Nunavut, and Quebec City. It received positive reviews and won four Genie Awards, including Best Direction for Pilon, and the Special Grand Prize of the Jury of the Montreal World Film Festiva</p>
+
+  <h2>Synopsis:</h2>
+  <p>In the midst of a tuberculosis outbreak, Tiivii, an Inuit man from Baffin Island, is sent to a sanatorium in Quebec City for treatment. There, he encounters a French Canadian nurse named Carole, and befriends an orphaned boy named Kaki. As Tiivii struggles with the language barrier, cultural differences, and his illness, he forms a unique bond with Carole and Kaki, navigating the complexities of human connection amidst adversity.</p>
+
+  <div class="container">
+    <h2>Bodies and Illness</h2>
+    <p>In 1952, a tuberculosis epidemic is sweeping Northern Canada, and numerous Inuit are compelled by the government to seek treatment in the lower provinces.</p>
+    <p>Tivii arrives at a sanatorium in Quebec City, separated from his family and thrust into a world of medical intervention and isolation.</p>
+    <p>The film portrays the physical toll of illness on Tivii's body, as well as the emotional strain of being separated from his home and community.</p>
+
+    <h2>Healing and Adaptation</h2>
+    <p>Tivii struggles with the language barrier and cultural differences in the hospital environment, but finds solace in unexpected connections with fellow patients and caregivers.</p>
+    <p>Through the support of Carole, a French Canadian nurse, and Kaki, a young orphan who becomes his translator and friend, Tivii begins to adapt to his new surroundings and find hope for recovery.</p>
+    <p>The film explores themes of resilience and adaptation as Tivii learns to navigate the unfamiliar world of the hospital and find meaning and purpose in his journey toward healing.</p>
+
+    <h2>Hospital Environment</h2>
+    <p>The hospital setting serves as a stark contrast to Tivii's home in the Arctic, with its sterile corridors and bustling activity.</p>
+    <p>The film depicts the challenges of navigating the complex healthcare system and the isolation experienced by patients separated from their families and communities.</p>
+    <p>Despite the unfamiliarity of his surroundings, Tivii finds moments of connection and humanity in the hospital, forging bonds with fellow patients and caregivers that transcend language and cultural barriers.</p>
+  </div>
+  <div class="container">
+    <h2>Exploring Narratives of Displacement and Healing</h2>
+    <p>In the film "The Necessities of Life," we witness the profound impact of displacement and illness on the protagonist, Tivii.</p>
+    <p>Similar to the experiences documented in the narratives of Inuit individuals affected by tuberculosis, Tivii is forcibly separated from his home and community to seek treatment in a distant sanatorium.</p>
+    <p>The hospital environment, depicted as a stark contrast to Tivii's familiar surroundings, becomes a site of isolation and cultural disconnection.</p>
+    <p>Yet, amidst the challenges of language barriers and cultural differences, Tivii finds unexpected sources of healing and resilience in the connections he forms with fellow patients and caregivers.</p>
+    <p>Through the support of individuals like Carole, a French Canadian nurse, and Kaki, a young orphan who becomes his translator and friend, Tivii begins to navigate his new reality and find hope for recovery.</p>
+    <p>"The Necessities of Life" underscores the importance of storytelling as a means of processing trauma and reclaiming one's sense of identity and belonging.</p>
+    <p>Join us in exploring the themes of displacement, trauma, and healing as depicted in this powerful film, and discover the resilience of the human spirit in the face of adversity.</p>
+  </div>
+
+  <h2>Key Details:</h2>
+  <ul>
+      <li><strong>Directed by:</strong> Benoît Pilon</li>
+      <li><strong>Written by:</strong> Bernard Émond</li>
+      <li><strong>Starring:</strong> Natar Ungalaaq, Éveline Gélinas, Paul-André Brasseur</li>
+      <li><strong>Cinematography:</strong> Michel La Veaux</li>
+      <li><strong>Music by:</strong> Robert Marcel Lepage</li>
+      <li><strong>Language:</strong> French, Inuktitut</li>
+      <li><strong>Release Date:</strong> August 28, 2008 (Canada)</li>
+      <li><strong>Running Time:</strong> 102 minutes</li>
+      <li><strong>Country:</strong> Canada</li>
+  </ul>
+
+  <h2>Cast:</h2>
+  <ul>
+      <li>Natar Ungalaaq as Tiivii</li>
+      <li>Éveline Gélinas as Carole</li>
+      <li>Paul-André Brasseur as Kaki</li>
+      <li>Denis Bernard as Father Millaire</li>
+      <li>Louise Marleau as Sister Luce</li>
+      <li>Antoine Bertrand as Roger</li>
+      <li>Guy Thauvette as Dr. Montpetit</li>
+  </ul>
+
+   <!-- YouTube Trailer -->
+   <h2>Watch the Trailer</h2>
+   <div class="video-container">
+       <iframe width="760" height="415" src="https://www.youtube.com/embed/xiaO8fDVnKc" frameborder="0" allowfullscreen></iframe>
+   </div>
+
+   <h2>Pics from movie</h2>
+   <div class="container gallery">
+    <!--<img src="{% static 'path_to_your_image.jpg' %}" alt="Description of the image">-->
+     <img src="https://m.media-amazon.com/images/M/MV5BNzc3MmFjZTEtNjI4YS00MGJiLThkNzUtZWNkYzAyNjBmYjNiXkEyXkFqcGdeQXVyNTA1NDY3NzY@._V1_.jpg" alt="Description of the image">
+     <img src="https://static1.showtimes.com/gallery/540x286/the-necessities-of-life-67644.jpg" alt="Description of the image">
+     <img src="https://m.media-amazon.com/images/M/MV5BMTU0ODAxMjgzM15BMl5BanBnXkFtZTcwNzUyODU5NA@@._V1_FMjpg_UX2160_.jpg" alt="Description of the image">
+     <img src="https://m.media-amazon.com/images/M/MV5BMTQ0MTc1ODYzNF5BMl5BanBnXkFtZTcwNTYyODU5NA@@._V1_FMjpg_UX2160_.jpg" alt="Description of the image">
+     <img src="https://resizing.flixster.com/F8m03r4Pf1jqT3eas0E-vFU3AeY=/fit-in/1152x864/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p188068_i_h9_aa.jpg" alt="Description of the image">
+     <img src="https://static1.showtimes.com/gallery/540x286/the-necessities-of-life-67648.jpg" alt="Description of the image">
+     <img src="https://static2.showtimes.com/gallery/540x286/the-necessities-of-life-67643.jpg" alt="Description of the image">
+     <img src="https://static1.showtimes.com/gallery/540x286/the-necessities-of-life-67646.jpg" alt="Description of the image">
+     <img src="https://static2.showtimes.com/gallery/540x286/the-necessities-of-life-67645.jpg" alt="Description of the image">
+     
+
+
+
+    <!--<img src="{% static 'path_to_your_image.jpg' %}" alt="Description of the image">-->
+  </div>
+
+  <h2>Production:</h2>
+  <p>When director Benoît Pilon read Bernard Émond's screenplay, he wanted Inuit actor Natar Ungalaaq as the lead role after seeing him in the Inuit film Atanarjuat: The Fast Runner. Ungalaaq read the screenplay, and found the story personal as his real-life grandfather was diagnosed with tuberculosis during the historical epidemic in the 1950s. He did not disclose this story to the media until after the film was complete. For his role as Kaki, Paul-André Brasseur, who lived in Montreal and spoke French, learned his Inuktitut lines with Ungalaaq's aid.
+
+    The budget was $4 million. Filming took place over nearly a year, in numerous locations. Arctic scenes were shot around Iqaluit, Nunavut, and other scenes were shot in Quebec City, Quebec.</p>
+
+  <h2>Release and Reception:</h2>
+  <p>The film premiered at the Montreal World Film Festival and at the Théâtre Maisonneuve on August 25, 2008. It opened in wider Quebec theaters on August 29 and was later re-released in Montreal, Quebec City, and Sherbrooke on April 3, 2009.
+
+    After being submitted for consideration for the Academy Award for Best Foreign Language Film, Entertainment One granted distribution rights for the United States to IFC Films in January 2009. Entertainment One subsequently re-released the film in Toronto, Ontario, and Vancouver, British Columbia in April 2009.</p>
+
+  <h2>Critical Response:</h2>
+  <p>The film received critical acclaim. "The Necessities of Life" has an approval rating of 60% on the review aggregator website Rotten Tomatoes, based on 5 reviews, with an average rating of 6.2/10.
+
+    In Canada, Marc-André Lussier of La Presse called the film beautiful and praised Natar Ungalaaq's strong and charismatic performance. Brendan Kelly of The Montreal Gazette labeled it "quite simply one of the best Quebecois films of the year." Normand Provencher, also from La Presse, described it as intelligent and beautiful. Brian D. Johnson, writing for Maclean's, assessed the film as "an immaculately crafted, deeply distressing drama," though challenging to watch due to its subject matter. Johnson praised Ungalaaq's graceful performance but noted occasional depictions of the noble savage trope. Linda Barnard, in The Toronto Star, praised it as "A gentle yet moving story," highlighting Ungalaaq's performance.
+    
+    Following Quebec's Jutra Awards, MP Marcel Proulx remarked in the House of Commons of Canada in March 2009 that the film made a powerful statement on the distinct cultures of Nunavik and the rest of Quebec. MP Roger Pomerleau also publicly congratulated Ungalaaq.
+    
+    Writing for Variety, Dennis Harvey noted that "Necessities knows just how to eke maximum poignancy from its events without seeming to manipulate for tearjerking effect." Dan Kois, of The Washington Post, found the film "thoughtful and, especially at its end, quite touching," but criticized its lack of originality and bland direction. Cliff Doerksen, in The Chicago Reader, remarked that while parts of the film seemed no better than a TV movie, the acting remained understated and strong. </p>
+
+  <h2>Accolades:</h2>
+  <p>Among its accolades, "The Necessities of Life" received nominations for the Academy Award for Best Foreign Language Film and garnered multiple wins at the Genie Awards and Jutra Awards.</p>
+  <div class="container">
+    <h2>Awards and Nominations</h2>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>Award</th>
+                <th>Date of Ceremony</th>
+                <th>Category</th>
+                <th>Recipient(s)</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Academy Awards</td>
+                <td>81st Academy Awards</td>
+                <td>Best Foreign Language Film</td>
+                <td>Shortlisted among nine</td>
+                <td>Not nominated</td>
+            </tr>
+            <tr>
+                <td>Genie Awards</td>
+                <td>4 April 2009</td>
+                <td>Best Motion Picture</td>
+                <td>Bernadette Payeur and René Chénier</td>
+                <td>Nominated</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Direction</td>
+                <td>Benoît Pilon</td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Original Screenplay</td>
+                <td>Bernard Émond</td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Actor</td>
+                <td>Natar Ungalaaq</td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Supporting Actress</td>
+                <td>Éveline Gélinas</td>
+                <td>Nominated</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Original Score</td>
+                <td>Robert Marcel Lepage</td>
+                <td>Nominated</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Editing</td>
+                <td>Richard Comeau</td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Costume Design</td>
+                <td>Francesca Chamberland</td>
+                <td>Nominated</td>
+            </tr>
+            <tr>
+                <td>Jutra Awards</td>
+                <td>29 March 2009</td>
+                <td>Best Film</td>
+                <td>Bernadette Payeur and René Chénier</td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Direction</td>
+                <td>Benoît Pilon</td>
+                <td>Nominated</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Screenplay</td>
+                <td>Bernard Émond</td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Actor</td>
+                <td>Natar Ungalaaq</td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Music</td>
+                <td>Robert Marcel Lepage</td>
+                <td>Nominated</td>
+            </tr>
+            <tr>
+                <td>Montreal World Film Festival</td>
+                <td>2008</td>
+                <td>Special Grand Prize of the Jury</td>
+                <td>Benoît Pilon</td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Most Popular Film of the Festival</td>
+                <td></td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Most Popular Canadian Feature Film</td>
+                <td></td>
+                <td>Won</td>
+            </tr>
+            <tr>
+                <td>Toronto Film Critics Association</td>
+                <td>16 December 2009</td>
+                <td>Best Canadian Film</td>
+                <td>Runner-up</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Vancouver Film Critics Circle</td>
+                <td>13 January 2009</td>
+                <td>Best Canadian Film</td>
+                <td>Nominated</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Best Actor in a Canadian Film</td>
+                <td>Natar Ungalaaq</td>
+                <td>Won</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</main>
+</body>
+
+{% else %}
+    <div class="col-md-6 offset-md-3">
+        <h1>Login</h1><br>
+
+        <form method="POST" action="{%url 'home'%}">
+            {% csrf_token %}
+            <form>
+
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="User_name" placeholder="First name" required>
+                </div>
+
+                <br>
+                <div class="mb-3">
+                  <input type="password" class="form-control" name="password" placeholder="password" required>
+                </div>
+
+                <br>    
+                <button type="submit" class="btn btn-secondary">Login</button>
+
+              </form>
+        </form>
+
+    </div>
+{% endif %}
+{% endblock %}

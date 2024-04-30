@@ -24,6 +24,7 @@
         box-sizing: border-box; /* Include padding and border in the box's total width and height */
         text-align: center;
         height: 100%; /* Ensure consistent height for each movie box */
+        background-color: rgb(239, 236, 236);
     }
 
     .movie-box img {
@@ -42,6 +43,13 @@
         height: auto; /* Maintain aspect ratio */
         max-width: 400px; /* Set maximum width for the image */
         max-height: 400px; /* Set maximum height for the image */
+    }
+
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
     }
 
 
@@ -76,7 +84,7 @@
             <a href="{% url 'movie_detail' 2 %}" class="movie-link">
                 <div class="movie-box">
                     <h2>{{ movie2.name }}</h2>
-                    <img src="https://m.media-amazon.com/images/M/MV5BMTM2ODA4MzE3N15BMl5BanBnXkFtZTcwODE2NjA0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Description of the image">
+                    <img src="https://images.mubicdn.net/images/film/97322/cache-60321-1468048379/image-w1280.jpg" alt="Description of the image">
                     <br>
                     <br>
                     <p><b>Description: </b>{{ movie2.description }}</p>
@@ -123,7 +131,7 @@
             <a href="{% url 'movie_detail' 5 %}" class="movie-link">
                 <div class="movie-box">
                     <h2>{{ movie5.name }}</h2>
-                    <img src="https://cps-static.rovicorp.com/2/Open/20th%20Century%20Fox/The%20Hospital/_derived_jpg_q90_310x470_m0/TheHospital-PosterArt.jpg" alt="Description of the image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDVlMGI1ZGQtZTMxMC00ZTA1LWExNTctMjVjOTQ0MzMyYmVmXkEyXkFqcGdeQXVyNTk5NzQ5Ng@@._V1_FMjpg_UX1150_.jpg" alt="Description of the image">
                     <br>
                     <br>
                     <p><b>Description: </b>{{ movie5.description }}</p>
