@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+{% if user.is_authenticated %}
+<style>
+  body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      font-size: large;
+      margin: 0;
+      padding: 0;
+      
+  }
+  header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+  }
+  main {
+      padding: 20px;
+  }
+  h1 {
+      margin-bottom: 20px;
+  }
+  h2 {
+      margin-top: 30px;
+  }
+  main img {
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    
+    display: block;
+  }
+  p {
+      margin-bottom: 20px;
+  }
+  ul {
+      list-style: none;
+      padding: 0;
+  }
+  ul li {
+      margin-bottom: 10px;
+  }
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 20px;
+  }
+  .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Augustine</h1>
+  
+</header>
+
+<main>
+  <div class="container">
+    <img src="https://pics.filmaffinity.com/Augustine-752907960-large.jpg" alt="Description of the image"  style="color: #fff; padding: 10px; margin: 0 auto; width: 700px; height: 900px; display: block;">
+    </div>
+    <h2>Introduction:</h2>
+    <p>
+      "Augustine" is a 2012 French historical erotic drama film written and directed by Alice Winocour, marking her feature directorial debut. The film explores the complex relationship between French neurologist Jean-Martin Charcot and his patient Louise Augustine Gleizes, known as Augustine or A. Despite the film's depiction, there was no sexual relationship between the two in reality.
+    </p>
+    
+    <h2>Plot:</h2>
+    <p>
+        While serving at a dinner party, kitchen maid Augustine feels her hands going numb and then has a violent fit that leaves her paralyzed in one eye. Augustine is brought to a hospital where she attracts the attention of Jean-Martin Charcot after she has seizures in front of him. Charcot examines her while she is naked and realizes that she has lost feeling in one side of her body. He pierces her arm with a hot needle, but Augustine cannot feel it. He also discovers that despite having matured physically, Augustine has never menstruated.
+        <br><br>
+        Charcot decides to use Augustine as a test case in front of other fellow doctors in order to see whether he will be able to obtain funding to do his work. He has Augustine hypnotized in front of the doctors and induces one of her fits which results in her having an orgasm before collapsing. The doctors applaud Charcot and he begins to work with Augustine in earnest, giving her her own room within the hospital and examining her thoroughly. While helping a fellow patient behead a chicken Augustine faints at the sight of blood—when she regains consciousness, she manages to open both her eyes as normal, but still lacks sensation in one side of her body. Augustine begins to menstruate after this incident.
+<br><br>
+        Charcot leaves for Bordeaux to go to a conference. When Augustine is unable to see him she has a fit and is locked in her room. When Charcot returns, upon asking to see Augustine he finds her tied up in her room and is told she is unwilling to eat. He spoon-feeds her soup and tells her that she must eat in order to be healthy enough for him to cure her.
+<br><br>
+        The more time they spend together, the more Charcot begins to feel attracted to Augustine, even sneaking into her room at night to observe her sleeping. Conversely, Augustine begins to feel trapped. When her cousin stops visiting her Augustine decides she wants to leave and find employment. Charcot refuses to let her, promising he will help her when he cures her.
+<br><br>
+        Charcot finally receives the go-ahead to lecture in front of the medical academy with Augustine. However, as she is being prepped to go to the lecture she runs away, falls down a set of steps, hits her head, and regains sensation in her body. When Charcot tries to hypnotize her for his lecture in order to induce a seizure, the hypnotization fails and Augustine whispers to Charcot that she is cured, flexing her hand for him. After Charcot tells his audience that some experiments are best left to the lab, Augustine fakes an attack of hysteria. After Charcot has her brought to his office, hands his lecture notes to an assistant and goes to his office where he and Augustine have sex.
+<br><br>
+        After Augustine leaves his office Charcot goes outside to find that the lecture has gone well and his peers are all fascinated and promise to back him financially. While he is being congratulated he sees Augustine slip down the stairs and watches as she runs away from the sanatorium, making a final escape to freedom.           
+    </p>
+    
+   <!-- YouTube Trailer -->
+   <h2>Watch the Trailer</h2>
+   <div class="video-container">
+       <iframe width="760" height="415" src="https://www.youtube.com/embed/Lp2tSs4oYss" frameborder="0" allowfullscreen></iframe>
+   </div>
+
+   <h2>Pics from movie</h2>
+   <div class="container gallery">
+    <!--<img src="{% static 'path_to_your_image.jpg' %}" alt="Description of the image">-->
+     <img src="https://cdn.shortpixel.ai/spai2/q_glossy+ret_img+to_auto/www.slantmagazine.com/wp-content/uploads/2013/05/augustine.jpg" alt="Description of the image">
+     <img src="https://variety.com/wp-content/uploads/2012/05/raugustine.jpg" alt="Description of the image">
+     <img src="https://assets.mubicdn.net/images/film/97322/image-w1280.jpg?1468048379" alt="Description of the image">
+     <img src="https://medias.unifrance.org/medias/66/73/84290/format_page/augustine.jpg" alt="Description of the image">
+     <img src="https://m.media-amazon.com/images/M/MV5BMjEwMDgzMDExMF5BMl5BanBnXkFtZTcwNjA5NDA2OQ@@._V1_.jpg" alt="Description of the image">
+     <img src="https://indieethos.files.wordpress.com/2013/07/augustine_6.jpg" alt="Description of the image">
+     <img src="https://proxymedia.woopic.com/api/v1/images/331%2FAUGUSTINEXXW0077574_BAN1_2424_NEWTV.jpg" alt="Description of the image">
+     <img src="https://m.media-amazon.com/images/M/MV5BMTU1OTgzODk3M15BMl5BanBnXkFtZTcwMDUwMTg0OQ@@._V1_.jpg" alt="Description of the image">
+     <img src="https://m.media-amazon.com/images/M/MV5BNTUyNTRkMjItYzc5OS00NjkzLThlMTctMTA5Yjc2ZDdkODI1XkEyXkFqcGdeQXVyNTI0MTczMzA@._V1_.jpg" alt="Description of the image">
+    <!--<img src="{% static 'path_to_your_image.jpg' %}" alt="Description of the image">-->
+  </div>
+
+
+    <h2>Production Details:</h2>
+    <ul>
+      <li><strong>Directed by:</strong> Alice Winocour</li>
+      <li><strong>Written by:</strong> Alice Winocour</li>
+      <li><strong>Produced by:</strong> Isabelle Madelaine, Emilie Tisné</li>
+      <li><strong>Starring:</strong> Vincent Lindon, Soko, Chiara Mastroianni, Olivier Rabourdin, Roxane Duran, Lise Lamétrie, Sophie Cattani, Grégoire Colin, Ange Ruzé</li>
+      <li><strong>Cinematography:</strong> Georges Lechaptois</li>
+      <li><strong>Edited by:</strong> Julien Lacheray</li>
+      <li><strong>Music by:</strong> Jocelyn Pook</li>
+      <li><strong>Production Companies:</strong> Dharamsala, ARP, France 3 Cinéma, Darius Films</li>
+      <li><strong>Distributed by:</strong> ARP Sélection</li>
+      <li><strong>Release Dates:</strong> 19 May 2012 (Cannes), 7 November 2012 (France)</li>
+      <li><strong>Running Time:</strong> 107 minutes</li>
+      <li><strong>Country:</strong> France</li>
+      <li><strong>Language:</strong> French</li>
+      <li><strong>Budget:</strong> €3.9 million ($4.6 million)</li>
+      <li><strong>Box Office:</strong> $1.4 million</li>
+    </ul>
+    
+    <h2>Cast:</h2>
+    <ul>
+      <li>Vincent Lindon as Jean-Martin Charcot</li>
+      <li>Soko as Augustine</li>
+      <li>Chiara Mastroianni as Constance Charcot</li>
+      <li>Olivier Rabourdin as Bourneville</li>
+      <li>Roxane Duran as Rosalie</li>
+      <li>Lise Lamétrie as The nurse</li>
+      <li>And others...</li>
+    </ul>
+    
+    <h2>Awards:</h2>
+    <ul>
+      <li><strong>2013:</strong> Camerimage - Best Directorial Debut (Alice Winocour)</li>
+      <li><strong>2013:</strong> Women Film Critics Circle Awards - Adrienne Shelly Award (Augustine), Courage in Acting Award (Soko)</li>
+      <li>And various nominations including César Awards, Lumiere Awards, International Women's Film Festival In Rehovot, and more.</li>
+    </ul>
+</main>
+</body>
+
+{% else %}
+    <div class="col-md-6 offset-md-3">
+        <h1>Login</h1><br>
+
+        <form method="POST" action="{%url 'home'%}">
+            {% csrf_token %}
+            <form>
+
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="User_name" placeholder="First name" required>
+                </div>
+
+                <br>
+                <div class="mb-3">
+                  <input type="password" class="form-control" name="password" placeholder="password" required>
+                </div>
+
+                <br>    
+                <button type="submit" class="btn btn-secondary">Login</button>
+
+              </form>
+        </form>
+
+    </div>
+{% endif %}
+{% endblock %}
